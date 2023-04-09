@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', 'Отчет')
 
 @section('content')
     <h4>Работник: {{$employee->first_name}} {{$employee->last_name}}</h4>

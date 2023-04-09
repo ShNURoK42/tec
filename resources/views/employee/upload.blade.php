@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', 'Загрузка работников')
 
 @section('content')
     @if ($message = Session::get('success'))
