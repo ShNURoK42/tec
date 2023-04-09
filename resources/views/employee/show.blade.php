@@ -33,7 +33,7 @@
                         <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{date('d.m.Y H:i:s', strtotime($datum->started_work_at))}}</td>
-                            <td>{{date('d.m.Y H:i:s', strtotime($datum->finished_work_at))}}</td>
+                            <td>{{ $datum->finished_work_at ? date('d.m.Y H:i:s', strtotime($datum->finished_work_at)) : '-'}}</td>
                         </tr>
                     @endforeach
                     </table>
